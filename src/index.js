@@ -83,6 +83,8 @@ function Tabla(props){
                 <th>Grupo</th>
                 <th>Forma</th>
                 <th>Unidades</th>
+                <th></th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -95,6 +97,8 @@ function Tabla(props){
                 <td>{dato.grupo}</td>
                 <td>{dato.forma}</td>
                 <td>{dato.unidades}</td>
+                <td><button onClick={() => openModal(dato.valores)}>Valores</button></td>
+                <td><button onClick={() => openModal(dato.atributos)}>Atributos</button></td>
                 </tr>
               ))}
             </tbody>
@@ -102,6 +106,10 @@ function Tabla(props){
         </div>
       </div>
   );
+}
+
+function openModal(data){
+  alert(data)
 }
 
 
