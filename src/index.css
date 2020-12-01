@@ -18,3 +18,18 @@ ol, ul {
   flex-direction: row;
 }
 
+.tabla {
+  font-size: 24px;
+  color: #045973;
+}
+
+.textodialog {
+  font-size: 20px;
+  color: #045973;
+  font-weight: bold;
+}
+
+.carga {
+  font-size: 22px;
+  color: #045973;
+}
